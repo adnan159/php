@@ -42,6 +42,22 @@ if($alam==$rahim){
 	echo "Rahim has more money then Alam";
 }
 
+echo "</br>";
+
+//and or
+
+$adnan = "single";
+$tanvir = "duel";
+
+if("single" == $adnan && "single" == $tanvir){
+	echo "Adnan is {$adnan}";
+	echo "tanvir is {$tanvir}";
+}elseif("single" == $adnan || "duel" == $tanvir){
+	echo "they one have girlfriend";
+}
+
+
+
 
 
 
