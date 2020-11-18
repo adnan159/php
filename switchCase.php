@@ -79,4 +79,35 @@ switch (true) {
 		break;
 }
 
+echo "</br>";
+//another issue
+
+$string = "8balls";
+switch ($string) {
+	case "9balls":
+		echo "Nine balls";
+		break;
+	case 8:
+		echo "something";//there is a issue
+		break;
+	case "8balls":
+		echo "8balls";
+		break;
+}
+
+echo "</br>";
+//solution
+$string = "8balls";
+switch ($string) {
+	case (string)"9balls":
+		echo "Nine balls";
+		break;
+	case (string)8:
+		echo "something"; //solved
+		break;
+	case (string)"8balls":
+		echo "8balls";
+		break;
+}
+
 
