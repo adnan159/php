@@ -36,3 +36,21 @@ function fixd($x,$y,$z):int{//value shuld be integer
 	return $x+$y+$z;
 }
 
+//unlimited perameter accept function
+function unlimitedPerameter(int ...$numbers):int{//$number is a veriable and accept unlimited perameter
+	$result = 0;
+	for ($i=0; $i <count($numbers) ; $i++) { 
+		$result += $numbers[$i];
+	}
+	return $result;
+}
+
+function unlimitedPerameterNew($x,$y, int ...$numbers):int{//$number is a veriable and accept unlimited perameter
+	$result = 0;
+	for ($i=0; $i <count($numbers) ; $i++) { 
+		$result += $numbers[$i];
+	}
+	return $result;
+}
+
+
