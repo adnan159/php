@@ -27,9 +27,12 @@ function factorial(int $x){ //accept int type of value.. (type hinting)
 }*/
 
 //default perameter
-
 function serve($type = 'Water', $item = 1){
 	echo "{$item} bottole of {$type} is served";
 }
 
+//return type fixed
+function fixd($x,$y,$z):int{//value shuld be integer
+	return $x+$y+$z;
+}
 
