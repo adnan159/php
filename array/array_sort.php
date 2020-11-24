@@ -14,3 +14,4 @@ print_r($fruitsKey);
 //rsort()  for reverse sort
 //rasort() for reverse sort
 //ksort()  for sort by key
+//krsort() for reverse sort by key
