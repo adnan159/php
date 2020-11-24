@@ -5,5 +5,5 @@ print_r($person);
 
 echo "</br>";
 
-unset($person['lname']);
+unset($person['lname']);//to remove data from assosiative array
 print_r($person);
